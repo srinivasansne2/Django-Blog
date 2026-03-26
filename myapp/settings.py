@@ -158,9 +158,15 @@ LOGGING = {
 # EMAIL_HOST_USER = '2545988dd996df'
 # EMAIL_HOST_PASSWORD = '0096e526e37cd2'
 
+from pathlib import Path
 
-import os
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 LOGIN_URL = 'blog:login'
