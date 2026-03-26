@@ -52,6 +52,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'blog.middleware.RedirectAuthenticatedUserMiddleware',
     'blog.middleware.RestrictUnauthenticatedUserMiddleware',
+
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'myapp.urls'
@@ -170,3 +172,5 @@ DATABASES = {
 }
 
 LOGIN_URL = 'blog:login'
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
