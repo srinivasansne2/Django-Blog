@@ -6,8 +6,8 @@
             <div class="col">
                 <div class="d-flex justify-content-center gap-3">
                     <a class="text-light text-decoration-none" href="/">Home</a>
-                    <a class="text-light text-decoration-none" href="{% url 'about' %}">About</a>
-                    <a class="text-light text-decoration-none" href="{% url 'contact' %}">Contact</a>
+                    <a class="text-light text-decoration-none" href="{% url 'blog:about' %}">About</a>
+                    <a class="text-light text-decoration-none" href="{% url 'blog:contact' %}">Contact</a>
                     {% if user.is_authenticated %}
                     <a class="text-light text-decoration-none" href="{% url "blog:dashboard" %}">Dashboard</a>
                     <a class="text-light text-decoration-none" href="{% url "blog:logout" %}">Logout</a>
