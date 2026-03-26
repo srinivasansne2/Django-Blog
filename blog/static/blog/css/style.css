@@ -1,0 +1,53 @@
+body {
+    background-color: #d7c7c7;
+}
+
+/* Pagination container */
+.pagination {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Page items */
+.page-item {
+    margin: 0 5px;
+}
+
+/* Links */
+.page-link {
+    color: #007bff;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    padding: 8px 14px;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.page-link:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+/* Active page */
+.page-item.active .page-link {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    font-weight: bold;
+}
+
+/* Disabled state */
+.page-item.disabled .page-link {
+    color: #ccc;
+    pointer-events: none;
+    background-color: #f8f9fa;
+}
+
+/* Page info text */
+.page-link span {
+    font-size: 14px;
+}
+.page-link {
+    border-radius: 20px;
+}
