@@ -159,7 +159,7 @@ def forgot_password(request):
                 'token': token
             })
 
-            send_mail(subject, message, 'noreply@jvlcode.com', [email])
+            send_mail(subject, message, 'noreply@sri.com', [email])
             messages.success(request, 'Email has been sent')
 
 
